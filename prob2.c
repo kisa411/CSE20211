@@ -76,7 +76,7 @@ double conversion (double x, double y) {
     } else if (x > 0.0 && y < 0.0) {
         angle += ((3*M_PI)/2);
     } else {
-	angle = angle;
+	   angle = angle;
     }
     return angle;
 }
