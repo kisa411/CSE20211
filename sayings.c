@@ -31,7 +31,7 @@ int main(){
 	}
 
 	//menu of options
-	printf("Choose one of the following options:\n 1.Displaying all sayings currently in the database. \n 2. Enter a new saying into the database.\n 3. List sayings that contain the given word (substring) entered by the user.\n 4. Save all sayings in a new text file.\n 5. Quit the program.\n");
+	printf("Choose one of the following options:\n 1. Displaying all sayings currently in the database. \n 2. Enter a new saying into the database.\n 3. List sayings that contain the given word (substring) entered by the user.\n 4. Save all sayings in a new text file.\n 5. Quit the program.\n");
 	
 
 	do { //ask for user input at least once, then go into switch statement
@@ -56,8 +56,6 @@ int main(){
 				scanf("%c", &emptycharacter); //capture newline input from keyboard
 
 				fgets(sayings[numberOfSayings], 80, stdin); //read input from standard input (string is at max 80 characters long) and put it into temp array
-
-				printf("%s\n", sayings[numberOfSayings]);
 
 				//put new saying into next open row in 2D array saying
 				// strcpy(sayings[numberOfSayings + 1], temp); //copy string from temp into sayings array at new open row
@@ -94,7 +92,7 @@ int main(){
 				printf("Please put in a valid input\n");
 
 				//re-prompt user for correct input
-				printf("Choose one of the following options:\n 1.Displaying all sayings currently in the database.\n 2. Enter a new saying into the database.\n 3. List sayings that contain the given word (substring) entered by the user.\n 4. Save all sayings in a new text file.\n 5. Quit the program.\n");
+				printf("Choose one of the following options:\n 1. Displaying all sayings currently in the database.\n 2. Enter a new saying into the database.\n 3. List sayings that contain the given word (substring) entered by the user.\n 4. Save all sayings in a new text file.\n 5. Quit the program.\n");
 				continue; //go back up to do loop and re-prompt for userinput
  		} 
 	} while (userInput > 0);
