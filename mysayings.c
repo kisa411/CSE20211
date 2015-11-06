@@ -55,8 +55,10 @@ int main(){
 				// scanf("%s", temp);
 				scanf("%c", &emptycharacter); //capture newline input from keyboard
 
-				fgets(sayings[numberOfSayings], 80, stdin); //read input from standard input (string is at max 80 characters long) and put it into sayings array
+				fgets(sayings[numberOfSayings], 80, stdin); //read input from standard input (string is at max 80 characters long) and put it into temp array
 
+				//put new saying into next open row in 2D array saying
+				// strcpy(sayings[numberOfSayings + 1], temp); //copy string from temp into sayings array at new open row
 				numberOfSayings++;
 				break;
 			case 3:
