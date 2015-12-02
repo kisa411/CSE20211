@@ -32,8 +32,8 @@ int main () {
 		} else if (isspace(letter)) { //if the letter read is a whitespace
 			whiteSpace++;
 		}
-	characters++;
-	letter = fgetc(filePointer); //calls on fgetc until end of file - requires reassignment to letter to get the next letter
+		characters++;
+		letter = fgetc(filePointer); //calls on fgetc until end of file - requires reassignment to letter to get the next letter
 	}
 
 	spacePercentage = (whiteSpace)/(characters);

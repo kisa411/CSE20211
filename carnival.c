@@ -16,16 +16,19 @@ int main() {
 	gfx_open(600, 600, "Emily Carnival");
 	gfx_clear_color(225, 205, 230);
 
-	do {
+	while(1) {
 		drawCircle();
 		// circlePosition();
 
 		gfx_event_waiting();
 		if (gfx_event_waiting()) {
 			c = gfx_wait();
+			if (c == 'q') {
+				break;
+			}
 		}
-	} while (c != 'q');
-
+	}
+	
 	return 0;
 }
 
